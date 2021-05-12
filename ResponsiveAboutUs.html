@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        
+        <style>
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+
+
+body{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.about-section{
+    background:url('https://dl.dropbox.com/s/fnibuty8qw5a9kf/3.jpg?dl=0') no-repeat left;
+    background-size:55%;
+    background-color:#fdfdfd;
+    overflow:hidden;
+    padding:100px 0;
+}
+
+.inner-container{
+    width:55%;
+    float:right;
+    background-color:#fdfdfd;
+    padding:150px;
+}
+
+.inner-container h1{
+    margin-bottom:30px;
+    font-size:30px;
+    font-weight:900;
+}
+
+.text{
+   font-size:13px; 
+   color:#545454;
+   line-height:30px;
+   text-align:justify;
+  margin-bottom:40px;
+}
+
+.skills{
+    display:flex;
+    justify-content:space-between;
+    font-weight:700;
+    font-size:13px;
+}
+
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding:80px;
+    }
+    }
+    
+ @media screen and (max-width:1000px){
+    .about-section{
+        background-size:100%;
+        padding:100px 40px;
+    }   
+     
+     
+    .inner-container{
+        width:100%;
+    }
+    
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding:0;
+    }
+    
+    .inner-container{
+       padding:60px; 
+    }
+    
+    .skills{
+        margin-top:15px;
+    }
+    .text{
+        align:justify;
+    }
+}
+       </style>
+        
+    </head>
+    <body>
+        
+       <div class="about-section">
+           <div class="inner-container">
+           <h1>About Us</h1>
+           
+            <p class="tex">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.     
+            </p>
+            
+            
+           <div class="skills">
+            <span>Web Development</span>       
+            <span>Design</span> 
+            
+            <span>Coding</span> 
+            
+           </div>
+            
+           </div>
+           
+           
+           
+       </div>
+        
+        
+    </body>
+</html>
